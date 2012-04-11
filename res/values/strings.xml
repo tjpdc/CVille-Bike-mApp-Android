@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="recording_title">CycleTracks</string>
+    <string name="recording_title">CVille Bike mApp</string>
     
-    <string name="app_name">CycleTracks</string>
+    <string name="app_name">CVille Bike mApp</string>
 <string name="previous_trips">Saved Trips:</string>
-<string name="startNewTrip">Start Trip!</string>
+<string name="startNewTrip">Start Recording!</string>
 <string name="pauseButtonLabel">Pause</string>
+<string name="lockButtonLabel">Lock</string>
 <string name="finishedButtonLabel">Finish</string>
 
-<string name="enterTripInfo">And add any comments about your trip here</string>
-<string name="promptPurpose">Select the main purpose of this trip</string>
-<string name="uploadProgressTitle">Sending...</string>
-<string name="uploadProgressMessage">Sending your trip.\n\nThanks for using CycleTracks!</string>
-
-
-
-
-
-
+<string name="enterTripInfo">Add any comments about your trip here</string>
+<string name="promptPurpose">Select the mode of transportation for this trip</string>
+<string name="uploadProgressTitle">Sending&#8230;</string>
+<string name="uploadProgressMessage">Sending your trip.\n\nThanks for using CVille Bike mApp!</string>
+<string name="class_prompt">Classification</string>
+<string name="purpose_prompt">Purpose of Transportation</string>
 
 
 </resources>

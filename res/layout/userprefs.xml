@@ -1,48 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/ScrollView01" android:layout_width="wrap_content"
-	android:layout_height="wrap_content">
-	<LinearLayout android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:orientation="vertical">
-		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:layout_marginRight="5sp"
-			android:layout_marginBottom="10sp" android:layout_marginLeft="12sp" android:layout_marginTop="5sp" android:text="Thanks for using CycleTracks!  Please enter your user details here.  It's optional, anonymous, and will really help us understand different people's biking preferences."></TextView>
-		<TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginLeft="15sp" android:text="Age"></TextView><RelativeLayout android:id="@+id/RelativeLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent"><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10sp" android:layout_weight="1" android:id="@+id/TextAge" android:hint="Age" android:inputType="number" android:lines="1" android:layout_alignParentLeft="true"></EditText><RadioGroup android:id="@+id/RadioGroup01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
-				<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonMale" android:text="Male" android:layout_marginLeft="10sp" android:textStyle="bold" android:textSize="14sp"></RadioButton>
-				<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:layout_marginLeft="10sp" android:id="@+id/ButtonFemale" android:textStyle="bold" android:textSize="14sp"></RadioButton>
-			</RadioGroup></RelativeLayout>
-		<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cycling Frequency:" android:layout_marginLeft="10sp" android:layout_alignParentLeft="true" android:layout_marginTop="20sp" android:textStyle="bold"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="10sp" android:id="@+id/TextFreq" android:textStyle="bold" android:layout_marginTop="20sp" android:text="Less than once a month"></TextView></RelativeLayout>
-		<SeekBar android:layout_height="wrap_content"
-			android:layout_width="fill_parent"
-			android:id="@+id/SeekCycleFreq" android:minHeight="30sp" android:thumb="@drawable/icon48" android:max="399" android:layout_marginTop="2sp" android:nextFocusDown="@+id/TextZipHome" android:thumbOffset="0sp" android:layout_marginLeft="12sp" android:layout_marginRight="12sp"></SeekBar>
-		
-		
-		<LinearLayout android:id="@+id/LinearLayout01"
-			android:layout_height="wrap_content"
-			android:orientation="horizontal" android:layout_width="fill_parent" android:layout_marginLeft="10sp" android:layout_marginRight="10sp" android:layout_marginTop="20sp">
-            <LinearLayout android:id="@+id/ZipLayout1" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
-                <TextView android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5sp" android:text="Home ZIP" android:textStyle="bold"></TextView>
-    			<EditText android:layout_width="fill_parent"
-	       			android:layout_height="wrap_content" android:id="@+id/TextZipHome" android:inputType="number" android:lines="1" android:nextFocusDown="@+id/TextZipWork" android:hint="Home"></EditText>
-			</LinearLayout>
-            <LinearLayout android:id="@+id/ZipLayout2" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
-                <TextView android:id="@+id/TextView07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:text="Work ZIP" android:layout_marginLeft="7sp"></TextView>
-                <EditText android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" android:id="@+id/TextZipWork" android:inputType="number" android:lines="1" android:nextFocusDown="@+id/TextZipSchool" android:hint="Work " android:layout_marginLeft="2sp" android:layout_marginRight="2sp"></EditText>
-            </LinearLayout>
-            <LinearLayout android:id="@+id/ZipLayout3" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
-                <TextView android:id="@+id/TextView08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5sp" android:textStyle="bold" android:text="School ZIP"></TextView>
-                <EditText android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" android:id="@+id/TextZipSchool" android:inputType="number" android:lines="1" android:nextFocusDown="@+id/TextEmail" android:hint="School"></EditText>
-            </LinearLayout>
-		</LinearLayout>
-		
-		<TextView android:id="@+id/TextView04" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:layout_marginTop="20sp" android:textStyle="bold" android:layout_marginRight="5sp" android:layout_marginLeft="15sp" android:text="Email address:  for news and updates !!"></TextView>
-		<EditText android:layout_height="wrap_content"
-			android:layout_marginLeft="10sp" android:layout_width="fill_parent"
-			android:layout_marginRight="10sp" android:id="@+id/TextEmail" android:hint="email address" android:lines="1" android:inputType="textEmailAddress"></EditText>
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:text="Thanks for using CVille Bike mApp!  Please enter your user details here." >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="10sp"
+                android:text="Cycling Self-rating? *"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/SpinnerCyclingRating"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="5sp"
+                android:layout_toRightOf="@+id/TextView04"
+                android:prompt="@string/class_prompt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="12.5sp"
+                android:text="Affiliated with UVA? *"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="10sp"
+                android:orientation="horizontal" >
+                <!-- android:layout_weight="2" -->
+
+                <RadioButton
+                    android:id="@+id/ButtonYes01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Yes"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/ButtonNo01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="No"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="10sp"
+                android:text="UVA Classification?"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spnClass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="5sp"
+                android:layout_toRightOf="@+id/TextView02"
+                android:prompt="@string/class_prompt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="7.5sp"
+                android:text="Do you want to partici-\npate in Drawing? *"
+                android:textStyle="bold" >
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/RadioGroup03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="10sp"
+                android:orientation="horizontal" >
+                <!-- android:layout_weight="2" -->
+
+		        <!--android:layout_toRightOf="@+id/TextView05"-->
+				
+
+                <RadioButton
+                    android:id="@+id/ButtonYes03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Yes"
+                    android:textSize="14sp"
+                    android:textStyle="bold" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ButtonNo03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="No"
+                    android:textSize="14sp"
+                    android:textStyle="bold" >
+                </RadioButton>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:text="Information for the drawing:\nPrizes will be awarded to randomly selected participants. If you wish to enter the raffle, please enter your name and contact info below."
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Name"
+            android:textStyle="bold" >
+            <!--android:layout_alignParentLeft="true"  -->
+        </TextView>
+
+        <EditText
+            android:id="@+id/TextName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:nextFocusDown="@+id/TextView08" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Phone or Email"
+            android:textStyle="bold" >
+            <!-- android:layout_alignParentRight="true"-->
+        </TextView>
+
+        <EditText
+            android:id="@+id/TextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:hint="Phone Number or Email Address"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:nextFocusDown="@+id/TextView09" >
+        </EditText>
+    </LinearLayout>
+
 </ScrollView>

@@ -1,15 +1,19 @@
-CycleTracks
+CVille Bike mApp
 -----------
+Copyright 2012, Thomas Jefferson Planning District Commission
+
+Based on CycleTracks.
 Copyright 2009, 2010 San Francisco County Transportation Authority
 100 Van Ness Ave FL26
 San Francisco, CA 94102 USA
 
-Code written by Billy Charlton.
+CycleTracks code written by Billy Charlton.
+Charlottesville modifications by Jeff Shirley.
 
-contact email: modeling@sfcta.org
-http://www.sfcta.org/cycletracks
+contact email: srhodes@tjpdc.org
+http://www.cvillebikemapp.com
 
-CycleTracks is released under the GNU General Public License, version 3.
+CVille Bike mApp is released under the GNU General Public License, version 3.
 See 'COPYING' for a detailed description of the GNU GPL.
 
 -----------
